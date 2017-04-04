@@ -9,7 +9,7 @@ div {
     margin-left: 22%;
     width: 800px; 
     height: auto;
-    min-height: 200px;
+    min-height: 400px;
     background: #002B36;
     
 }
@@ -69,4 +69,11 @@ span.at2 {
 p1{
     text-align: center;
     
+}
+input{
+    background-color: #002B36;
+    border:1px;
+    border-radius: 10px;
+    border-color:#2AA198;
+    border-style: solid
 }
