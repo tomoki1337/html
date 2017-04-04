@@ -1,41 +1,66 @@
 <html>
     <head>
         <link rel="stylesheet" href="start.css">
+        <script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
     </head>
 <body>
     <div>
+        <p style="font-size:20px;color:#D33682;text-align:center;margin-top:20px;"> Welcome to the internet, Tomo.</p>
         <p><span class="tomo">tomo</span><span class="at">@</span><span class="magi">magi</span><span class="no9etin">:</span><span class="at">~</span>|<span class="at">=> </span>
         <span class="title"> social media</span>
         </p>
-        <p>
-
-            <a href="https://www.facebook.com">facebook</a>
-            <a href="https://www.twitter.com">twitter</a>
-            <a href="https://www.instagram.com">instagram</a> 
-
+        
+        <p style="text-align:center;margin-left:auto;margin-right: auto;width: 6em;">
+            <p style="color:#2AA198;display:inline-block;">(<a  href="https://www.facebook.com">facebook</a>)</p>   
+            <p style="color:#2AA198;display:inline-block;">(<a href="https://www.twitter.com">twitter</a>)</p> 
+            <p style="color:#2AA198;display:inline-block;">(<a href="https://www.instagram.com">instagram</a>)</p>  
+            
         </p>
+        
          <p><span class="tomo">tomo</span><span class="at">@</span><span class="magi">magi</span><span class="no9etin">:</span><span class="at">~</span>|<span class="at">=> </span>
         <span class="title"> 4chan </span>
         </p>
-        <p>
-
-            <a href="http://boards.4chan.org/g/">/technology/</a>
-            <a href="http://boards.4chan.org/wg/">/wallpapers/</a>
-            <a href="http://boards.4chan.org/gd/">/graphic design/</a> 
+        
+        <p style="text-align:center">
+            <p style="color:#2AA198;display:inline-block;">(<a href="http://boards.4chan.org/g/">/technology/</a>)</p> 
+            <p style="color:#2AA198;display:inline-block;">(<a href="http://boards.4chan.org/wg/">/wallpapers/</a>)</p> 
+            <p style="color:#2AA198;display:inline-block;">(<a href="http://boards.4chan.org/gd/">/graphic design/</a>)</p>  
 
         </p>
+        
         <p><span class="tomo">tomo</span><span class="at">@</span><span class="magi">magi</span><span class="no9etin">:</span><span class="at">~</span>|<span class="at">=> </span>
-        <span class="title"> torrent </span>
+        <span class="title"> streaming and media </span>
         </p>
-        <p>
+        
+        <p style="text-align:center">
 
-            <a href="http://boards.4chan.org/g/">/technology/</a>
-            <a href="http://boards.4chan.org/wg/">/wallpapers/</a>
-            <a href="http://boards.4chan.org/gd/">/graphic design/</a> 
-
+            <p style="color:#2AA198;display:inline-block;">(<a href="https://www.youtube.com">youtube</a>)</p>
+            <p style="color:#2AA198;display:inline-block;">(<a href="https://www.soundcloud.com">sound cloud</a>)</p>
+            <p style="color:#2AA198;display:inline-block;">(<a href="http://www.kissanime.ru/">kiss anime</a> )</p>
+            <p style="color:#2AA198;display:inline-block;">(<a href="http://www.kissasian.com/">kiss asian</a>)</p> 
         </p>
 
         
+        <p style="color:#2AA198;margin-left:700px;">(<div2 id="clockbox"></div2>)</p>
     </div>
+
 </body>
 </html>

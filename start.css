@@ -3,17 +3,20 @@ html {
 }
 
 div {
+    position: relative;
     display: block;
     margin-top: 18%;
     margin-left: 22%;
     width: 800px; 
-    height: 400px;
+    height: auto;
+    min-height: 200px;
     background: #002B36;
+    
 }
   
     
 p { 
-    padding-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     font-family: monospace;
     font-size: 16px;
@@ -21,7 +24,6 @@ p {
 }
 span.tomo {
     color:#D33682;
-    
 }
 span.at {
     color:#2AA198;
@@ -35,24 +37,36 @@ span.no9etin {
 span.title {
     text-align: center;
     color:#D33682;
-    
+    text-align:center;
 }
 a:link {
     color:#D33682;
+    text-align:center;
     text-decoration: none
 }
 
 a:visited {
     color:#D33682;
+    text-align:center;
     text-decoration: none
 }
 
 a:hover {
     color:#D33682;
+    text-align:center;
     text-decoration: none
 }
 
 a:active {
+    text-align:center;
     color:#D33682;
     text-decoration: none
+}
+span.at2 {
+    color:#2AA198;
+    
+}
+p1{
+    text-align: center;
+    
 }
