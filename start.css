@@ -1,0 +1,32 @@
+html {
+    background-image: url("src/bg.png");
+}
+
+div {
+    display: block;
+    margin-top: 18%;
+    margin-left: 22%;
+    width: 800px; 
+    height: 400px;
+    background: #002B36;
+}
+  
+    
+p { 
+    font-family: monospace;
+    font-size: 16px;
+    color:#FF0000;
+}
+span.tomo {
+    color:#D33682;
+    
+}
+span.at {
+    color:#2AA198;
+}
+span.magi {
+    color:#859900; 
+}
+span.no9etin {
+    color:red; 
+}
